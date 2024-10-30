@@ -1,0 +1,93 @@
+section,
+footer {
+    padding: 54px 0;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.btn{
+    background-color: gray;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+.btn:hover{
+    background-color: black;
+}
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #4f9bf98a;
+    }
+    to{
+        outline: 15px solid #4f9bf900;
+    }
+}
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: rgb(0, 0, 0);
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: black;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%
+}
+h1{
+    text-align: center;
+
+}
+table{
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    box-shadow: 11px 15px 31px -9px;
+    margin-bottom: 48px;
+}
+
+td, th{
+    text-align: center;
+    border-bottom: 1px solid #8e96a100;
+    
+
+}
+tr:nth-child(even) {
+    background-color: rgb(205, 219, 219);
+}
+    h1{
+        font-family: 'Bebas Neue', sans-serif;
+}
+.letra{
+    font-family: "LaLiga Text";
+}

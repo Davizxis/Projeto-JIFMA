@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+*{   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+.container1{
+    width: 200dvh;
+}
+.conheça{
+    text-align: center;
+    color: #fff;
+}
+.btn{
+    background-color: gray;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+.btn:hover{
+    background-color: black;
+}
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #4f9bf98a;
+    }
+    to{
+        outline: 15px solid #4f9bf900;
+    }
+}
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: black;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    padding: 50px 50px;
+
+}
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,.15);
+    transition: .5s;
+    background-color: white;
+}
+.container .card:hover {
+    height: 400px;
+}
+.container .card .caixaimg {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .5s;
+}
+.container .card .caixaimg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .conteudo {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: .5s;
+
+}
+.container .card:hover .conteudo{
+    top: 150px;
+    height: 250px;
+}
+.container .card:hover .caixaimg {
+    top: -100px;
+    scale: .75;
+    box-shadow: 0 15px 45px rgba(0,0,0,.2);
+}
+.container .card .conteudo h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+.container .card .conteudo p {
+    color: #333;
+}
+.container .card .conteudo button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    background: #333;
+    color: #fff;
+    transition: .5s;
+
+}
+.container .card .conteudo button:hover {
+    background: rgba(5, 62, 248, 0.986);
+    transition: .5s;
+}
+.h1{
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+   
+}
